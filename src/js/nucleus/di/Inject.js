@@ -72,7 +72,7 @@ Ext.define('Nucleus.di.Inject', {
 	            });
 
 			} else {
-				console.debug('boo');
+				console.debug('No dependencies set, although class set as Injectable');
 			}
 
 			// Prevent circular dependencies
