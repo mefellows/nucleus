@@ -21,6 +21,7 @@ Production
 ----------
 1. Copy the <code>nucleus.js-version-x.y.z</code> distribution into your extension directonio (i.e. <code>/lib</code>)
 2. Add the following to the <code>js</code> array in <code>app.json</code>
+
 ````javascript
     "js": [
         {
