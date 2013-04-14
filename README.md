@@ -17,6 +17,9 @@ Download
 Installation
 ============
 
+# Copy the library from /dist into your Sencha Touch extensions folder (by default)
+
+
 Configuration
 =============
 
