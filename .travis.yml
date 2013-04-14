@@ -1,4 +1,6 @@
 language: bash
 before_script: 
+	- echo "Changing directory to 'tests'"
 	- cd ./tests
+	- pwd
 script: ./run.sh
