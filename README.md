@@ -1,4 +1,4 @@
-nucleus
+Nucleus
 =======
 
 Flyweight dependency injection framework for Sencha Touch.
