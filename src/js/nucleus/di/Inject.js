@@ -60,7 +60,6 @@ Ext.define('Nucleus.di.Inject', {
 			console.debug('Object has already been injected, ignoring')
 		} else {
 			console.debug('Object has not been injected, injecting...')
-			console.debug('injecting!')
 	        if (Array.isArray(object.config.injects)) {
 	            console.debug('Class contains dependency injection annotations');
 	            Ext.Array.each(object.config.injects, function(dependency, index) {
