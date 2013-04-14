@@ -1,6 +1,14 @@
 language: php
+
+php:
+  # using major version aliases
+
+  # aliased to a recent 5.4.x version
+  - 5.4
+
 before_script: 
-	- echo "Changing directory to 'tests'"
-	- cd ./tests
-	- pwd
+  - echo "Changing directory to 'tests'"
+  - cd ./tests
+  - pwd
+
 script: ./run.sh
