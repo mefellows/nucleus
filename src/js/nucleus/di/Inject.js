@@ -95,7 +95,5 @@ Ext.define('Nucleus.di.Inject', {
             	return me.registry[identifier]
             }
         }(identifier);
-
-        console.log(object)
     },
 });

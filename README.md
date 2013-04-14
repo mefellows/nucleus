@@ -19,8 +19,8 @@ Installation
 
 Production
 ----------
-1. Copy the <code>nucleus.js-version-x.y.z</code> distribution into your extension directonio (i.e. <code>/lib</code>)
-2. Add the following to the <code>js</code> array in <code>app.json</code>
+1. Copy the `nucleus.js-version-x.y.z` distribution into your extension directonio (i.e. `/lib`)
+2. Add the following to the `js` array in `app.json`
 
 ````javascript
     "js": [
@@ -40,8 +40,8 @@ Production
 
 Development
 -----------
-1. Copy the library contents from the /dist into a <code>Nucleus</code> folder in the root of your Sencha Touch application folder (by default)
-2. Add the following to the <code>js</code> array in <code>app.json</code>
+1. Copy the library contents from the /dist into a `Nucleus` folder in the root of your Sencha Touch application folder (by default)
+2. Add the following to the `js` array in `app.json`
 
 ````javascript
      "js": [
@@ -65,7 +65,7 @@ Nucleus is installed.
 
 Configuration
 =============
-In app.js, just prior to your <code>Ext.application</code> declaration, 
+In app.js, just prior to your `Ext.application` declaration, 
 
 ````javascript
 Nucleus.di.Inject.configure({
