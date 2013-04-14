@@ -60,7 +60,6 @@ Ext.define('Nucleus.di.Inject', {
 			console.debug('Object has already been injected, ignoring')
 		} else {
 			console.debug('Object has not been injected, injecting...')
-			console.debug('injecting!')
 	        if (Array.isArray(object.config.injects)) {
 	            console.debug('Class contains dependency injection annotations');
 	            Ext.Array.each(object.config.injects, function(dependency, index) {
@@ -72,7 +71,7 @@ Ext.define('Nucleus.di.Inject', {
 	            });
 
 			} else {
-				console.debug('boo');
+				console.debug('No dependencies set, although class set as Injectable');
 			}
 
 			// Prevent circular dependencies
@@ -95,8 +94,6 @@ Ext.define('Nucleus.di.Inject', {
             	return me.registry[identifier]
             }
         }(identifier);
-
-        console.log(object)
     },
 });Ext.define('Nucleus.di.mixin.Injectable', {
     extend: 'Ext.mixin.Mixin',
