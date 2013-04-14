@@ -11,6 +11,15 @@ Nucleus is designed to be a
 * Unobtrusive - you shouldn't need to extend any class or participate in any complicated inheritance hierarchy to use Nucleus
 * Simple to use - the intention is to satisfy the most common use cases, not every possibility under the sun
 
+Project Status
+==============
+Project is currently in **Alpha**, meaning it is highly likely to change (probably for the better).
+
+Build Status
+============
+[![Build Status](https://travis-ci.org/mefellows/nucleus.png)](https://travis-ci.org/mefellows/nucleus)
+
+
 Installation
 ============
 
