@@ -1,4 +1,4 @@
 language: bash
 before_script: 
 	- cd ./tests
-script: bash ./run.sh
+script: ./run.sh
