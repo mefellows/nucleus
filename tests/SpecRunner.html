@@ -6,19 +6,37 @@
 
   <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.2.0/jasmine_favicon.png">
   <link rel="stylesheet" type="text/css" href="lib/jasmine-1.2.0/jasmine.css">
+
+  <script type="text/javascript" src="lib/sencha-touch-all-compat.js"></script>
+  
   <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine.js"></script>
   <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine-html.js"></script>
   <script type="text/javascript" src="lib/jasmine.console_reporter.js"></script>
 
-  <!-- include source files here... -->
+  <!-- include source files here... 
 
   <script type="text/javascript" src="lib/sencha.min.js"></script>
-  <script type="text/javascript" src="lib/nucleus.min.js"></script>
+
+  <script type="text/javascript" src="lib/sencha-touch-all-compat.js"></script>
+  <script type="text/javascript" src="lib/nucleus.combined.js"></script>
+-->
+  <!--<script type="text/javascript" src="touch/microloader/development.js"></script>
+  <script type="text/javascript" src="development.js"></script>
 
   <!-- include spec files here... -->
-  <script type="text/javascript" src="spec/injectSpec.js"></script>
+  <!--<script type="text/javascript" src="spec/basic.js"></script>-->
+  <script type="text/javascript" src="spec/InjectSpec.js"></script>
 
-  <script type="text/javascript">
+  <!-- Test Launcher -->
+  <script type="text/javascript" src="app-test.js"></script>
+
+
+  <!--
+  <script type="text/javascript" src="spec/model/Foo.js"></script>
+  <script type="text/javascript" src="spec/injectSpec.js"></script>
+  <script type="text/javascript" src="spec/BrokenInjectSpec.js"></script>-->
+
+<!--  <script type="text/javascript">
     (function() {
       var jasmineEnv = jasmine.getEnv();
       jasmineEnv.updateInterval = 1000;
@@ -46,7 +64,14 @@
       }
 
     })();
-  </script>
+  </script>-->
+
+  <!-- Hide Sencha Application, or perhaps just move it to the bottom? -->
+  <style type="text/css">
+    #ext-viewport {
+      display:none;
+    }
+  </style>
 
 </head>
 

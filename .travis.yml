@@ -12,6 +12,9 @@ before_script:
   - echo "Changing directory to 'tests'"
   - cd ./tests
   - pwd
+  - phantomjs testrunner.js
 
 # Run the Jasmine tests
-script: ./run.sh
+#script: ./run.sh
+
+script: ./phantomjs run-jasmine.js http://localhost:3000/SpecRunner.html

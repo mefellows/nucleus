@@ -76,7 +76,6 @@ Ext.define('Nucleus.di.Inject', {
 
 			// Prevent circular dependencies
 			object.setInjected(true);
-			instance.test();
 		}
 	},
 

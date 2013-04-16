@@ -1,0 +1,1 @@
+/opt/sencha/touch/builds/sencha-touch-all-compat.js
