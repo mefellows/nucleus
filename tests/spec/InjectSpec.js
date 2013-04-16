@@ -29,8 +29,13 @@
 describe("Inject", function() {
 
   /*
-   * Setup Sencha Touch Application for Testing
+   * Setup Sencha Touch Application for Testing.
+   *
+   * Reset the Application object before starting again
    */
+
+   var Application = null;
+
    beforeEach(function() {
       Ext.Loader.setPath({
           'Ext': 'touch/src',
@@ -54,19 +59,11 @@ describe("Inject", function() {
         }
       });
 
-      Ext.application({
+      Application = Ext.create('Ext.app.Application', {
           name: 'Nucleus',
 
           launch: function() {
-              // Ext.create('Ext.viewport.Viewport', {
-              //     layout: 'fit',
-              //     items: [
-              //         {
-              //             title: 'Hello Ext',
-              //             html : 'Hello! Welcome to Ext JS.'
-              //         }
-              //     ]
-              // });
+            // Do nothing...
           }
       });
 
@@ -76,16 +73,17 @@ describe("Inject", function() {
   /*
    * Exception scenarious
    */
-  it("should fail when singleton class is passed constructor params", function() {
-
+  it("Should apply simple constructor parameters during Injection", function() {
+    var bar = Ext.create('TestNucleus.model.Bar');
+    bar.hello();
     
-    expect(null).toEqual(null);
+    expect(bar.hello()).toEqual("Hello Cats");
   });
 
   it("should do something else and not fail yet", function() {
 
 
-   	expect(null).toEqual(null);
+   	
   });  
 
 

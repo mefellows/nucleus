@@ -13,7 +13,9 @@ before_script:
   - echo "Changing directory to 'tests'"
   - cd ./tests
   - pwd
-  - python -m SimpleHTTPServer 3000 & 
+  - rackup  # start a Web server
+  - sleep 3 # give Web server some time to bind to sockets, etc
+#  - python -m SimpleHTTPServer 3000 &
 
 # Run the Jasmine tests
 #script: ./run.sh

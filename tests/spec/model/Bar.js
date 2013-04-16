@@ -1,6 +1,13 @@
-Ext.define('TestNucleus.model.Foo', {
+Ext.define('TestNucleus.model.Bar', {
 	config: {
 		foo: 'bar',
+
+		// Autowired dependencies
+		injects: [
+			{
+				foo: 'foo'
+			}
+		]		
 	},
 
 	mixins: [
@@ -12,6 +19,6 @@ Ext.define('TestNucleus.model.Foo', {
 	},
 
 	hello: function() {
-		return this.getFoo();
+		return "Hello " + this.getFoo().hello();
 	}
 })
