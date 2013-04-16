@@ -1,6 +1,7 @@
 # This is just to avoid the default Ruby environment. 
 # Project is not actually PHP, of course.
-language: php
+#language: php
+language: python
 
 php:
   # using major version aliases
@@ -12,9 +13,9 @@ before_script:
   - echo "Changing directory to 'tests'"
   - cd ./tests
   - pwd
-  - phantomjs testrunner.js
+  - python -m SimpleHTTPServer 3000 & 
 
 # Run the Jasmine tests
 #script: ./run.sh
 
-script: ./phantomjs run-jasmine.js http://localhost:3000/SpecRunner.html
+script: phantomjs run-jasmine.js http://localhost:3000/SpecRunner.html
