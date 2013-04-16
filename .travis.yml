@@ -1,7 +1,8 @@
 # This is just to avoid the default Ruby environment. 
 # Project is not actually PHP, of course.
 #language: php
-language: python
+#language: python
+language: ruby
 
 php:
   # using major version aliases
