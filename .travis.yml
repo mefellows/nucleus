@@ -1,25 +1,17 @@
 # This is just to avoid the default Ruby environment. 
 # Project is not actually PHP, of course.
 #language: php
-#language: python
-rvm:
-  - 1.9.3
-
-#php:
-#  # using major version aliases
-#
-#  # aliased to a recent 5.4.x version
-#  - 5.4
+language: python
 
 before_script: 
   - echo "Changing directory to 'tests'"
   - cd ./tests
   - pwd
-  - bundle exec rackup &
+#  - bundle exec rackup &
+  - python -m SimpleHTTPServer 3000 &
   - sleep 5 # give Web server some time to bind to sockets, etc
-#  - python -m SimpleHTTPServer 3000 &
 
 # Run the Jasmine tests
 #script: ./run.sh
 
-script: phantomjs run-jasmine.js http://localhost:888888880/SpecRunner.html
+script: phantomjs run-jasmine.js http://localhost:3000/SpecRunner.html
