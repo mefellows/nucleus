@@ -2,7 +2,8 @@
 # Project is not actually PHP, of course.
 #language: php
 #language: python
-language: ruby
+rvm:
+  - 1.9.3
 
 #php:
 #  # using major version aliases
@@ -14,8 +15,8 @@ before_script:
   - echo "Changing directory to 'tests'"
   - cd ./tests
   - pwd
-  - rackup  # start a Web server
-  - sleep 3 # give Web server some time to bind to sockets, etc
+  - bundle exec rackup &
+  - sleep 5 # give Web server some time to bind to sockets, etc
 #  - python -m SimpleHTTPServer 3000 &
 
 # Run the Jasmine tests
