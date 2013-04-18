@@ -22,4 +22,4 @@ before_script:
 # Run the Jasmine tests
 #script: ./run.sh
 
-script: phantomjs run-jasmine.js http://localhost:3000/SpecRunner.html
+script: phantomjs run-jasmine.js http://localhost:888888880/SpecRunner.html
