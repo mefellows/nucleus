@@ -25,6 +25,8 @@ Ext.define('Nucleus.di.Inject', {
 				classDefinition = Ext.ClassManager.get(configuration.className);
 			}
 
+ 
+
 			parameters = configuration.parameters != null ? [configuration.className].concat(configuration.parameters) : [configuration.className];
 
 			console.error("boo" + Ext.ClassManager.get(configuration.className).singleton)
@@ -47,7 +49,7 @@ Ext.define('Nucleus.di.Inject', {
 			// Seems to create the class, but without params?
 			//Ext.syncRequire(configuration.className);
 			//classDefinition = Ext  .ClassManager.get(configuration.className);
-			// console.log(classDefinition)
+			console.log(classDefinition)
 
 			// classDefinition.foo();
 		}, this);
